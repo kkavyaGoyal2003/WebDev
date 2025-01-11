@@ -1,9 +1,9 @@
 console.log(2+3) ;
-var user = {
-  name : "kkavya" ,
-  age : 21 
-}
-console.log(user) ;
+// var user = {
+//   name : "kkavya" ,
+//   age : 21 
+// }
+// console.log(user) ;
 
 var arr = ["kk" , "ak" , "sb" , "sg"] ;
 for(var i = 0 ; i < arr.length ; i++) {
