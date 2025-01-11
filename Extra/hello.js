@@ -35,14 +35,14 @@ for(var i = 0 ; i < arr.length ; i++) {
 // console.log();
 
 
-// function print( n) {
-//   for (var i = 1 ; i < n+1 ; i++) {
-//     console.log(i) ;
-//   }
-// }
+function print( n) {
+  for (var i = 1 ; i < n+1 ; i++) {
+    console.log(i) ;
+  }
+}
 
-// print(100) ;
-
+var sol = print(100) ;
+console.log(sol);
 
 function sum(ele1 , ele2) {
     return ele1 + ele2 ;
