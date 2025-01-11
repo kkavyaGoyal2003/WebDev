@@ -5,10 +5,10 @@ console.log(2+3) ;
 // }
 // console.log(user) ;
 
-// var arr = ["kk" , "ak" , "sb" , "sg"] ;
-// for(var i = 0 ; i < arr.length ; i++) {
-//   console.log(arr[i]) ;
-// }
+var arr = ["kk" , "ak" , "sb" , "sg"] ;
+for(var i = 0 ; i < arr.length ; i++) {
+  console.log(arr[i]) ;
+}
 
 // function printinfo(info) {
 //   for(var i = 0 ; i < info.length ; i++) {
