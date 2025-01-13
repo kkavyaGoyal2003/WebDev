@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3010
+const port = 3000
 
 function Pattern(num) {
     var result = "";
@@ -9,20 +9,20 @@ function Pattern(num) {
         for(let j = 0; j < i; j++) {
             str = str + "*";
         }
-        result += str + " \n";
+        result += str + "<br>";
     }
     return result;
 }
 
 function handleFirstRequest(req, res) {
     var counter = req.query.counter;
-    var str = Pattern(num);
+    var str = Pattern(counter);
     res.send(str);
 }
 
 app.get('/', handleFirstRequest);
 
 function started() {
-    console.log("Example app listening on port ${port}");
+    console.log(`Example app listening on port ${port}`);
 }
 app.listen(port,started);
