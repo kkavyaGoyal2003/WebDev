@@ -16,14 +16,15 @@ function handleFirstRequest(req, res) {
     var answer = "The sum is "+ calc;
     res.send(answer);
 }
-function createUser(req, res) {
-    // You can access the request body (if sent as JSON or URL encoded)
-    console.log(req.body);
-    res.send("hello");
-}
+// function createUser(req, res) {
+//     // You can access the request body (if sent as JSON or URL encoded)
+//     console.log(req.body);
+//     res.send("hello");
+// }
 
-app.get('/handleSum', handleFirstRequest)
-app.post('/createUser', createUser);
+// app.get('/handleSum', handleFirstRequest)
+// app.post('/createUser', createUser);
+app.post('/handleSum', handleFirstRequest)
 
 function started() {
     console.log("Example app listening on port ${port}")
