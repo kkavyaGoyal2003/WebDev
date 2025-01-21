@@ -2,6 +2,11 @@ const express = require('express');
 const app = express();
 const port = 3000
 
+function middleware1(req, res, next){
+    console.log("from inside middleware" + req.headers.counter);
+    next();
+}
+app.use(middleware1);
 function Pattern(num) {
     var result = "";
     for(let i = 1; i <= num; i++) {
