@@ -4,6 +4,7 @@ const port = 3000
 
 function middleware1(req, res, next){
     console.log("from inside middleware" + req.headers.counter);
+    res.send("Error in middleware");
     next();
 }
 app.use(middleware1);
