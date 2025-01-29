@@ -15,8 +15,13 @@ function Sum (counter) {
 function handleRequest(req, res) {
     console.log(req.body);
     let counter = req.body.counter;
-    let ans = Sum(counter);
-    res.send(ans.toString());
+    if(counter < 101) {
+        let ans = Sum(counter);
+        res.send(ans.toString());
+    } else {
+       res.status(404).send("Invalid input") 
+    }
+    
 }
 
 app.get('/sum', handleRequest);
