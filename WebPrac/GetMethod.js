@@ -2,12 +2,13 @@ const express = require('express');
 const app = express();
 const port = 3000
 
-// function middleware(req, res, next) {
-//     console.log("Inside middleware!!" + req.headers.counter);
-//     next();
-// }
+function middleware2(req, res, next) {
+    const strheader = req.headers.str || "Nod headers available";
+    res.send("Error in middleware");
+    console.log("Inside middleware!!" + strheader);
+}
+app.use(middleware2);
 
-// app.use(middleware);
 function Message(str) {
     return str;
 }
