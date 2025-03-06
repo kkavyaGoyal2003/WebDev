@@ -11,7 +11,8 @@ function Pattern(counter) {
         for(let j = 0; j < i; j++) {
             str = str + "*";
         }
-        result += str + "<br>";
+        result += str + "\n";
+        console.log();
     }
     return result;
 }
